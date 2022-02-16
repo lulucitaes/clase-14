@@ -17,7 +17,7 @@ function preload() {
   obstacle4 = loadImage("obstacle4.png");
   obstacle5 = loadImage("obstacle5.png");
   obstacle6 = loadImage("obstacle6.png");
-  groundImage = loadImage("ground2.png")
+  groundImage = loadImage("ground2.png")   -----------------> ojo aqui falta PUNTO Y COMA! 
 
 }
 
@@ -65,14 +65,14 @@ function nubes(){
       cloud.addImage(cloudImage); 
       cloud.scale = 0.5;
        cloud.velocityX = -3;
-        //asignar lifetime a la variable cloud.lifetime = 200; //ajustar la profundidad cloud.depth = trex.depth; trex.depth = trex.depth + 1; }
+        //asignar lifetime a la variable **** AQUI VA UN ENTER cloud.lifetime = 200; //ajustar la profundidad **** AQUI VA UN ENTER   cloud.depth = trex.depth; **** AQUI VA UN ENTER   trex.depth = trex.depth + 1; }
 
   
 }
 }
 function obstaculos(){
   if (frameCount%60==0){
-    var obstaculos=createSprites(600,165,10,40);
+    var obstaculos=createSprites(600,165,10,40);  -----------------> ojo SPRITE VA SIN S!! 
     obstaculos.velocityX=-6;
     var rand=Math.round(random(1,6));
     switch (rand) {
